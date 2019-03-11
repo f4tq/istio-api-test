@@ -2,8 +2,8 @@
 
 
 [[projects]]
-  branch = "master"
-  digest = "1:ac036fa070a512ce6994f9e59cb26356a6b89e03de56c9b8c5b53cc07f7df417"
+  branch = "apimachinery-kubernetes-1.13"
+  digest = "1:c74591617ab498dd6d8af75690f289857a35df08cc297eb92d47b12de91def21"
   name = "github.com/f4tq/istio-api-mod"
   packages = [
     "authentication/v1alpha1",
@@ -25,7 +25,7 @@
     "util",
   ]
   pruneopts = "UT"
-  revision = "4b3805ff60322427a7aea4a3b971e4013459ae28"
+  revision = "ad846fbc0b308f253204a63f57cd2ef1da757811"
 
 [[projects]]
   branch = "master"
@@ -181,7 +181,7 @@
   name = "golang.org/x/crypto"
   packages = ["ssh/terminal"]
   pruneopts = "UT"
-  revision = "8dd112bcdc25174059e45e07517d9fc663123347"
+  revision = "c2843e01d9a2bc60bb26ad24e09734fdc2d9ec58"
 
 [[projects]]
   branch = "master"
@@ -198,7 +198,7 @@
     "trace",
   ]
   pruneopts = "UT"
-  revision = "16b79f2e4e95ea23b2bf9903c9809ff7b013ce85"
+  revision = "56fb01167e7d1e1d17dd87993d34c963f4356e87"
 
 [[projects]]
   branch = "master"
@@ -213,14 +213,14 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:450c8a5021490079d681cae207e762e2bfffd25a861c39f6da1fa9de9742c682"
+  digest = "1:944736317d4f2fb1c1015ef9ca05fd9313b4e19f1128901cc678f636435fa9b0"
   name = "golang.org/x/sys"
   packages = [
     "unix",
     "windows",
   ]
   pruneopts = "UT"
-  revision = "e844e0132e93db857c984c24fd4fc86815e43be3"
+  revision = "c8c8c57fd1e1a977c10821a559dda983a9a9a3b5"
 
 [[projects]]
   digest = "1:a2ab62866c75542dd18d2b069fec854577a20211d7c0ea6ae746072a1dccdd18"
@@ -251,7 +251,7 @@
   name = "golang.org/x/time"
   packages = ["rate"]
   pruneopts = "UT"
-  revision = "85acf8d2951cb2a3bde7632f9ff273ef0379bcbd"
+  revision = "9d24e82272b4f38b78bc8cff74fa936d31ccd8ef"
 
 [[projects]]
   digest = "1:6f3bd49ddf2e104e52062774d797714371fac1b8bddfd8e124ce78e6b2264a10"
@@ -271,11 +271,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:077c1c599507b3b3e9156d17d36e1e61928ee9b53a5b420f10f28ebd4a0b275c"
+  digest = "1:c3076e7defee87de1236f1814beb588f40a75544c60121e6eb38b3b3721783e2"
   name = "google.golang.org/genproto"
   packages = ["googleapis/rpc/status"]
   pruneopts = "UT"
-  revision = "4f5b463f9597cbe0dd13a6a2cd4f85e788d27508"
+  revision = "5fe7a883aa19554f42890211544aa549836af7b7"
 
 [[projects]]
   digest = "1:cbc746de4662c66fd24a037501bd65aa0f8ad0bfca0c92576e0abb88864e3741"

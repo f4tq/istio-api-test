@@ -65,7 +65,7 @@ func setup(c *cli.Context) (*versionedclient.Clientset,string,error){
 	if err != nil {
 		log.Fatalf("Failed to create k8s rest client: %s", err)
 	}
-
+	//restConfig.ContentConfig.NegotiatedSerializer
 	ic, err := versionedclient.NewForConfig(restConfig)
 	if err != nil {
 		log.Fatalf("Failed to create istio client: %s", err)

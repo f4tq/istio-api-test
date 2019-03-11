@@ -30,5 +30,5 @@
   unused-packages = true
 
 [[constraint]]
-  branch = "master"
+  branch = "apimachinery-kubernetes-1.13"
   name = "github.com/f4tq/istio-api-mod"
