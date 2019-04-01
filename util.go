@@ -8,6 +8,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"gopkg.in/yaml.v2"
+     ghodss "github.com/ghodss/yaml"
 )
 func toJsonString(postData interface{}) (string, error) {
 	postDataString := new(bytes.Buffer)
@@ -37,14 +38,35 @@ func fromJsonString(bodyStr string, result interface{}) (err error) {
 	}
 	return err
 }
+func convert(i interface{}) interface{} {
+	switch x := i.(type) {
+	case map[interface{}]interface{}:
+		m2 := map[string]interface{}{}
+		for k, v := range x {
+			m2[k.(string)] = convert(v)
+		}
+		return m2
+	case []interface{}:
+		for i, v := range x {
+			x[i] = convert(v)
+		}
+	}
+	return i
+}
 
 type YamlMsg map[interface{}]interface{}
 
 func fromYamlString(bodyStr string, result interface{}) (err error) {
 	return yaml.Unmarshal([]byte(bodyStr), result)
 }
+
 func toYamlString(target interface{}) ( string,  error) {
-	resultBytes, err := yaml.Marshal(target)
+	js, err := toJsonString(target)
+	if err != nil {
+		return js,err
+	}
+
+	resultBytes, err := ghodss.JSONToYAML([]byte(js))
 	if err != nil {
 		log.Fatalf("error: %v", err)
 	}

@@ -24,6 +24,10 @@
 #   go-tests = true
 #   unused-packages = true
 
+[[constraint]]
+  name= "github.com/ghodss/yaml"
+  source = "github.com/f4tq/yaml"
+  
 
 [prune]
   go-tests = true

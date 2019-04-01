@@ -11,7 +11,6 @@ func main() {
 	glog.V(2)
 	app := cli.NewApp()
 	app.EnableBashCompletion = true
-
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
 			Name:   "kube-config",
