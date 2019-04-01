@@ -2,7 +2,7 @@
 
 
 [[projects]]
-  branch = "apimachinery-kubernetes-1.13-test"
+  branch = "apimachinery-kubernetes-1.13"
   digest = "1:11865ca674cf88771a96564f29eca66f303d1a652cafaab06cd1ca6d43add15c"
   name = "github.com/f4tq/istio-api-mod"
   packages = [
